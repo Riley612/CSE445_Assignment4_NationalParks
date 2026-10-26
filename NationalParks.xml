@@ -1,3 +1,21 @@
+<!--
+Sources used for National Park information:
+
+National Park Service:
+https://www.nps.gov/olym/index.htm
+https://www.nps.gov/seki/planyourvisit/index.htm
+https://www.nps.gov/mora/
+https://www.nps.gov/arch/
+https://www.nps.gov/grsa/
+https://www.nps.gov/brca/
+https://www.nps.gov/wica/
+https://www.nps.gov/maca/
+https://www.nps.gov/acad/
+
+Nearest airport information:
+https://www.landingfinder.com/
+-->
+
 <?xml version="1.0" encoding="utf-8"?>
 <NationalParks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NationalParks.xsd">
 
