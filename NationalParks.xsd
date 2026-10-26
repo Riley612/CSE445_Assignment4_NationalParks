@@ -2,28 +2,30 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="NationalParks">
+<xs:element name="NationalParks"> <!-- Root Element -->
+    <!-- since the root element contains a child element and order matters i used complexType and sequence -->
     <xs:complexType>
         <xs:sequence>
-            <xs:element name="NationalPark" minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="NationalPark" minOccurs="1" maxOccurs="unbounded"> <!-- child element of root -->
+                <!-- contains child elements with a specific order -->
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                        <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
-                        <xs:element name="Address" minOccurs="1" maxOccurs="1">
+                        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/> <!-- Element Name must be a string and have no more that 1 entry -->
+                        <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/> <!-- Element phone must be a string and have unlimited entries-->
+                        <xs:element name="Address" minOccurs="1" maxOccurs="1"> <!-- Element Address contains child elements have no more that 1 entry -->
                             <xs:complexType>
                                 <xs:sequence>
-                                    <xs:element name="Number" type="xs:int" minOccurs="1" maxOccurs="1"/>
-                                    <xs:element name="Street" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                                    <xs:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                                    <xs:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                                    <xs:element name="Zip" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                    <xs:element name="Number" type="xs:int" minOccurs="1" maxOccurs="1"/> <!-- Element number must be a integer and have no more that 1 entry -->
+                                    <xs:element name="Street" type="xs:string" minOccurs="1" maxOccurs="1"/> <!-- Element street must be a string and have no more that 1 entry -->
+                                    <xs:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/> <!-- Element City must be a string and have no more that 1 entry -->
+                                    <xs:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/> <!-- Element state must be a string and have no more that 1 entry -->
+                                    <xs:element name="Zip" type="xs:string" minOccurs="1" maxOccurs="1"/> <!-- Element zip must be a string to recognize zipcodes starting with zeros and have no more that 1 entry -->
                                 </xs:sequence>
-                                <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
+                                <xs:attribute name="NearestAirport" type="xs:string" use="required"/> <!-- Attribute of Address must be a string and is required -->
                             </xs:complexType>
                         </xs:element>
                     </xs:sequence>
-                    <xs:attribute name="Rating" type="xs:decimal"/>
+                    <xs:attribute name="Rating" type="xs:decimal"/> <!-- Attribute of NationalPark must be a decimal -->
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
