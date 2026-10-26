@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Error #1: changing root element from NationalParks to NationalPark -->
+<NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NationalParks.xsd">
+
+    <NationalPark Rating="4.9">
+        <Name>Olympic</Name>
+        <Phone>360-565-3130</Phone>
+        <Phone>360-565-3131</Phone>
+        <Phone>360-565-3100</Phone>
+        <Phone>360-797-5677</Phone>
+        <Phone>800-877-8339</Phone>
+        <Address> <!-- Error #2: Required attribute "NearestAirport" is missing -->
+            <Number>3001</Number>
+            <Street>Mt Angeles Rd</Street>
+            <City>Port Angeles</City>
+            <State>WA</State>
+            <Zip>98362</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark>
+        <Name>Kings Canyon</Name>
+        <!-- Error #3: The element "Phone" is missing --> 
+        <Address NearestAirport="Reedley Muni">
+            <Number>83918</Number>
+            <Street>Grant Grove Dr</Street>
+            <City>Grant Grove Village</City>
+            <State>CA</State>
+            <Zip>93633</Zip>
+        </Address>
+    </NationalPark>
+    
+    <NationalPark Rating="4.9">
+        <Name>Mount Rainier</Name>
+        <Phone>360-569-2211</Phone>
+        <Phone>360-569-2177</Phone>
+        <Address NearestAirport="Swanson FLD">
+            <Number>55210</Number>
+            <Street>238th Avenue East</Street>
+            <City>Ashford</City>
+            <State>WA</State>
+            <Zip>98304</Zip>
+        <!-- Error #4: The element "Address" is missing a closing tag -->
+    </NationalPark>
+
+    <NationalPark Rating="4.8">
+        <Name>Arches</Name>
+        <Name>Arches National Park</Name> <!-- Error #5: A 2nd "Name" element is provided -->
+        <Phone>435-719-2299</Phone>
+        <Address NearestAirport="Canyonlands RGNL">
+            <Number>2282</Number>
+            <Street>Resource Blvd</Street>
+            <City>Moab</City>
+            <State>UT</State>
+            <Zip>84532</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark Rating="4.8">
+        <Name>Great Sand Dunes</Name>
+        <Phone>719-378-6395</Phone>
+        <Address NearestAirport="Silver West">
+            <Number>11999</Number>
+            <Street>State Highway 150</Street>
+            <City>Mosca</City>
+            <State>CO</State>
+            <Zip>81146</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark Rating="4.9">
+        <Name>Bryce Canyon</Name>
+        <Phone>435-834-5322</Phone>
+        <Address NearestAirport="Bryce Canyon">
+            <Number>100</Number>
+            <Street>Bryce Canyon Rd</Street>
+            <City>Bryce Canyon</City>
+            <State>UT</State>
+            <Zip>84764</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark>
+        <Name>Wind Cave</Name>
+        <Phone>605-745-4600</Phone>
+        <Address NearestAirport="Hot Springs MUNI">
+            <Number>26611</Number>
+            <Street>US Highway 385</Street>
+            <City>Hot Springs</City>
+            <State>SD</State>
+            <Zip>57747</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark>
+        <Name>Mammoth Cave</Name>
+        <Phone>270-758-2180</Phone>
+        <Address NearestAirport="Glasgow MUNI">
+            <Number>1</Number>
+            <Street>Mammoth Cave Parkway</Street>
+            <City>Mammoth Cave</City>
+            <State>KY</State>
+            <Zip>42259</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark>
+        <Name>Sequoia</Name>
+        <Phone>559-565-3341</Phone>
+        <Address NearestAirport="Woodlake">
+            <Number>47050</Number>
+            <Street>Generals Highway</Street>
+            <City>Three Rivers</City>
+            <State>CA</State>
+            <Zip>93271</Zip>
+        </Address>
+    </NationalPark>
+
+    <NationalPark>
+        <Name>Acadia</Name>
+        <Phone>207-288-3338</Phone>
+        <Address NearestAirport="Hancock County/Bar Harbor">
+            <Number>25</Number>
+            <Street>Visitor Center Rd</Street>
+            <City>Bar Harbor</City>
+            <State>ME</State>
+            <Zip>04609</Zip>
+        </Address>
+
+    </NationalPark>
+
+</NationalPark> <!-- Error #1: changing root element from NationalParks to NationalPark -->
