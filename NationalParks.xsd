@@ -25,7 +25,7 @@
                             </xs:complexType>
                         </xs:element>
                     </xs:sequence>
-                    <xs:attribute name="Rating" type="xs:decimal"/> <!-- Attribute of NationalPark must be a decimal -->
+                    <xs:attribute name="Rating" type="xs:decimal" use="optional"/> <!-- Attribute of NationalPark must be a decimal -->
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
