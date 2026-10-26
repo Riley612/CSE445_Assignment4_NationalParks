@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
 This xml is a copy of my NationalParks.xml but I have injected errors on purpose. I have commented by each error I introduced. 
 
@@ -18,7 +20,6 @@ Nearest airport information:
 https://www.landingfinder.com/
 -->
 
-<?xml version="1.0" encoding="utf-8"?>
 <!-- Error #1: changing root element from NationalParks to NationalPark -->
 <NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NationalParks.xsd">
 
